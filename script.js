@@ -1,3 +1,4 @@
+
 let scheduleArray = [
     {time: "9AM", event: ""},
     {time: "10AM", event: ""},
@@ -16,6 +17,20 @@ $('#currentDay').text(currentDay);
 let currentHour = dayjs().format('HH');
 let currentHourInt = parseInt(currentHour);
 console.log(currentHourInt);
+
+$('.saveBtn').click (
+    function () {
+        let nineAM = $('.description').val();
+        localStorage.setItem('nineAM', JSON.stringify(nineAM));
+    }
+);
+
+function get () {
+let getNineAM = localStorage.getItem('nineAM');
+$('.description').textContent = JSON.parse(getNineAM);
+}
+
+get ();
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
