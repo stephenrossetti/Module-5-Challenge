@@ -1,36 +1,26 @@
-
-let scheduleArray = [
-    {time: "9AM", event: ""},
-    {time: "10AM", event: ""},
-    {time: "11AM", event: ""},
-    {time: "12PM", event: ""},
-    {time: "1PM", event: ""},
-    {time: "2PM", event: ""},
-    {time: "3PM", event: ""},
-    {time: "4PM", event: ""},
-    {time: "5PM", event: ""},
-];
-
 let currentDay = dayjs().format('dddd, MMMM D, YYYY');
 $('#currentDay').text(currentDay);
 
 let currentHour = dayjs().format('HH');
 let currentHourInt = parseInt(currentHour);
-console.log(currentHourInt);
 
-$('.saveBtn').click (
-    function () {
-        let nineAM = $('.description').val();
-        localStorage.setItem('nineAM', JSON.stringify(nineAM));
-    }
-);
+$(".saveBtn").click(function (event) {
+    event.preventDefault();
+    let eventNote = $(this).siblings(".description").val();
+    let hour = $(this).parent().attr("id");
+    localStorage.setItem(hour, eventNote);
+});
 
-function get () {
-let getNineAM = localStorage.getItem('nineAM');
-$('.description').textContent = JSON.parse(getNineAM);
-}
+$("#hour-9 .description").val(localStorage.getItem("hour-9"));
+$("#hour-10 .description").val(localStorage.getItem("hour-10"));
+$("#hour-11 .description").val(localStorage.getItem("hour-11"));
+$("#hour-12 .description").val(localStorage.getItem("hour-12"));
+$("#hour-13 .description").val(localStorage.getItem("hour-13"));
+$("#hour-14 .description").val(localStorage.getItem("hour-14"));
+$("#hour-15 .description").val(localStorage.getItem("hour-15"));
+$("#hour-16 .description").val(localStorage.getItem("hour-16"));
+$("#hour-17 .description").val(localStorage.getItem("hour-17"));
 
-get ();
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
