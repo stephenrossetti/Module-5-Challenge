@@ -10,8 +10,8 @@ Create new repository and utilize starter code from the Module-5-Challenge on Gi
 
 ## Mock-Up
 
-![alt text](https://github.com/stephenrossetti/Module-5-Challenge/blob/main/assets/Mockup-1.png)
-![alt text](https://github.com/stephenrossetti/Module-5-Challenge/blob/main/assets/Mockup-2.png)
+![alt text](https://github.com/stephenrossetti/Module-5-Challenge/blob/main/Assets/Mockup-1.png)
+![alt text](https://github.com/stephenrossetti/Module-5-Challenge/blob/main/Assets/Mockup-2.png)
 
 ## Usage
 
