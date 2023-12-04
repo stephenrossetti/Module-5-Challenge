@@ -21,6 +21,6 @@ To review the code, open the GitHub repository here: https://github.com/stephenr
 
 ## Credits
 
-Includes starter code from the UofM-VIRT-FSF-PT-10-2023-U-LOLC-ENTG -> 05-Third-Party-APIs -> 02-Challenge -> Develop folder (CSS/HTML/Script). 
+Includes starter code from the UofM-VIRT-FSF-PT-10-2023-U-LOLC-ENTG -> 05-Third-Party-APIs -> 02-Challenge -> Develop folder (CSS/HTML/Script). This code is from the repository of "crispy-octo-meme".
 
 Includes sample code utilizing "this" function from Week 5 activities.
