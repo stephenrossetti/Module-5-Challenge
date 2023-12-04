@@ -30,6 +30,8 @@ body {
     border-top: 1px dashed #000000;
   }
   
+  /* Start all timeblocks with future (green) formatting and use Javascript to change to past/present based on time */
+  /* Also, move this to top to be less priority formating (cascading css) */
   .future {
     background-color: #77dd77;
     color: white;
